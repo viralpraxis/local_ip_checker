@@ -1,0 +1,11 @@
+AllCops:
+  DisplayCopNames: true
+  SuggestExtensions: false
+  NewCops: enable
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Metrics/BlockLength:
+  Max: 80
+Style/Documentation:
+  Enabled: false
