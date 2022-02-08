@@ -1,10 +1,10 @@
 # Local IP Checker
 
-Simple ruby gem that provides checking if given URL resolves to local IP address.
+Simple ruby gem that provides checking if given URL resolves to local IPv4/IPv6 address.
 
 ## Abstract
 
-If your system makes HTTP requests to 3rd-party provided URL it's required to check if this URL maps to some kind of local IP address. This gem performs checks against following types of local IP addresses:
+If your system makes HTTP requests to an URL provided by 3rd-party it's important to check if this URL resolves to some kind of local IP address. This gem performs checks against the following types of local IP addresses:
 
 1. IPv4 and IPv6 localhost addresses.
 2. IPv4 `0.0.0.0` and IPv6 `::` addresses.
@@ -16,7 +16,7 @@ If your system makes HTTP requests to 3rd-party provided URL it's required to ch
 ## Usage
 
 Example:
-```
+```ruby
 require "local_ip_checker"
 
 LocalIPChecker.local?("google.com") # => false
